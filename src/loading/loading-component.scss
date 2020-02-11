@@ -1,0 +1,16 @@
+.overlay {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+  background: #333;
+  position: fixed;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
