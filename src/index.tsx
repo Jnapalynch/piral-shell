@@ -1,5 +1,13 @@
+import 'core-js/es7/reflect';
+import 'zone.js/dist/zone';
+import '@webcomponents/webcomponentsjs/webcomponents-loader';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter';
+
+
 import 'piral/polyfills';
-import { renderInstance, Piral } from 'piral';
+import { renderInstance } from 'piral';
+import { createNgApi } from 'piral-ng';
 import { errors } from './layout';
 import { layout } from './custom-layout';
 
@@ -10,6 +18,9 @@ const feedUrl = 'http://34.231.208.232/';
 renderInstance({
   layout,
   errors,
+  extendApi: [
+      createNgApi()
+  ],
   requestPilets() {
     return fetch(feedUrl)
       .then(res => res.json())

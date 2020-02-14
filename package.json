@@ -1,12 +1,23 @@
 {
   "name": "piral-store-shell",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "keywords": [
     "piral"
   ],
   "dependencies": {
-    "piral": "^0.10.2"
+    "piral-core": "^0.10.4",
+    "piral": "^0.10.2",
+    "piral-ng": "^0.10.4",
+    "@angular/common": "^8.0.0",
+    "@angular/compiler": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/platform-browser": "^8.0.0",
+    "@angular/platform-browser-dynamic": "^8.0.0",
+    "@webcomponents/webcomponentsjs": "^2.4.0",
+    "core-js": "^2.5.7",
+    "rxjs": "^6.3.3",
+    "zone.js": "^0.9.1"
   },
   "scripts": {
     "start": "piral debug",
@@ -15,7 +26,17 @@
   "app": "./src/index.html",
   "pilets": {
     "files": [],
-    "externals": [],
+    "externals": [
+      "@angular/common",
+      "@angular/compiler",
+      "@angular/core",
+      "@angular/platform-browser",
+      "@angular/platform-browser-dynamic",
+      "@webcomponents/webcomponentsjs",
+      "core-js",
+      "rxjs",
+      "zone.js"
+    ],
     "scripts": {},
     "validators": {},
     "devDependencies": {},
@@ -25,6 +46,7 @@
     "postUpgrade": ""
   },
   "devDependencies": {
+    "@types/angular": "^1.6.45",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
