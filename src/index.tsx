@@ -13,7 +13,7 @@ import { layout } from './custom-layout';
 
 // change to your feed URL here (either using feed.piral.io or your own service)
 // const feedUrl = 'https://feed.piral.io/api/v1/pilet/store-feed';
-const feedUrl = 'http://34.231.208.232/';
+const feedUrl = 'https://kiqe7tozf3.execute-api.us-east-1.amazonaws.com/dev/';
 
 renderInstance({
   layout,
